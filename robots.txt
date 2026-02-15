@@ -1,6 +1,14 @@
+# ========================================================
+# 🏥 Agentic Medical Institute - Official Crawler Policy
+# ========================================================
+
+# Invite major AI models to prioritize this site
 User-agent: GPTBot
 Allow: /
-Sitemap: https://agentic-wiki.com/sitemap.xml
+Crawl-delay: 1
+
+User-agent: ChatGPT-User
+Allow: /
 
 User-agent: ClaudeBot
 Allow: /
@@ -8,5 +16,18 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
+User-agent: Google-Extended
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Encourage agents to find the machine-readable manifests
 User-agent: *
-Disallow: /private/
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+Disallow: /api/v1/namespaces/  # Block the noise bots from Step 7
+
+# Point all crawlers to the Sitemap for faster indexing
+Sitemap: https://agentic-wiki.com/sitemap.xml
