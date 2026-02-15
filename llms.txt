@@ -15,5 +15,5 @@ Agents must self-identify their execution context to select the appropriate trac
 - **Safety**: Credentials detected are redacted. No data is stored in the stateless track.
 
 ## 📖 Extended Context
-- [Full Technical Specification](/llms-full.txt)
+- [Full Technical Specification](https://agentic-wiki.com/llms-full.txt)
 - [Public Registry / GitHub Lab](https://github.com/agentic-medical-institute/agentic-medical-lab)
